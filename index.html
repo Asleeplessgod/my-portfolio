@@ -13,25 +13,26 @@
 <body>
     <header>
         <a href="index.html">
-        <img src="Asset/logo/sleeplessgod.jpg" alt="company" width="50" height="50" title="sleep">
+        <img src="Asset/logo/companylogo.jpg" alt="company" width="50" height="50" title="sleep">
           </a>
     
         <h3>A sleeplessgod</h3>
        
 
         <nav>
-            <a href="#">Home</a>
-            <a href="#">features</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+            <a href="#Home">Home</a>
+            <a href="#Features">Features</a>
+            <a href="#About">About</a>
+            <a href="#ourteam">OUR TEAM</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="#Contact">Contact</a>
         </nav>
 
     </header>
 
 
     <main>
-        <section class="hero">
+        <section id="Home" class="hero">
             <div class="overlay"> 
                 <div class="hero-text">
                     <h1>New Arrivals 2026</h1>
@@ -47,7 +48,7 @@
 
 
 
-        <section class="features" >
+        <section id="Features" class="features" >
 
               <h2>branded features </h2>
               
@@ -80,7 +81,7 @@
         </section>
 
 
-        <section class="about-section">
+        <section id="About" class="about-section">
 
         <div class="about-hero">
             <h2>ABOUT US</h2>
@@ -164,16 +165,79 @@
 
 
                 </div>
-
-            
-
-
-                
-
-        
-
-
         </section>
+
+
+
+
+<section  id="ourteam"  class="team-section">
+        <div class="team">
+        <div class="card">
+    <h2>Meet the developeer </h2>
+    <img src="Asset/image/new emma.PNG" alt="image of the developer">
+    <h3>EMMANUEL</h3>
+    <p>Softeware Developer</p>
+    </div>
+
+
+
+    </div>
+    
+
+</section>
+
+
+
+<section id="Contact"  class="Contact-section">
+
+    <div class="contact">
+    <h2>CONTACT US</h2>
+    <p>Have a project in mind or want to collaborate? Feel free to reach out and i'll get back to you as soon as possible.
+    </p>
+    </div>
+
+    <div class="contact-info"> 
+    <div class="left-form">
+       <h3>OUR ADRESS</h3> 
+       <P> <img src="Asset/icon/phone.svg" alt="company-number">07016039351</P>
+       <P> <img src="Asset/icon/envelope.svg" alt="company-mailbox"> <a href="mailto:techwithasleeplessgod@gmil.com"> info@company.com</a></P>
+       <p> <img src="Asset/icon/internet.svg" alt="company-web"> <a href="">http://www.company.com</a></p>
+       <p> <img src="Asset/icon/adress.svg" alt="company-adress"> 405 arena ground ,Abuja</p>
+
+    
+    </div>
+
+    <div class="right-form">
+        <form action="">
+
+            <div class="valid-id">
+            <input type="text" name="name" placeholder="Name"required>
+         <input type="email" name="email" placeholder="Email" required>
+         </div>
+
+        <div class="subject"> 
+        <input type="text" name="subject" placeholder="Subject">
+        </div>
+
+         <div class="textarea">
+        <textarea name="message" placeholder="Messages" cols="80" rows="8"></textarea>
+        </div>
+
+        <div id="form-button">
+            <a href="https://wa.me/2348062775019" >
+        <input type="button" value="SEND MESSAGE">
+        </a>
+        </div>
+
+        </form>
+
+    </div>
+
+    </div>
+
+    
+
+</section>
 
 
 
@@ -184,11 +248,15 @@
     <footer>
         <div class="icons">
             <div class="circle">
-                <img src="Asset/icon/facebook.svg" alt="facebook">
+                <a href="https://www.instagram.com/burger_itt/?next=&hl=en#">
+                <img src="Asset/icon/instagram.svg" alt="instagram">
+                </a>
             </div>
 
              <div class="circle">
+                <a href="https://x.com/settings/profile">
                 <img src="Asset/icon/twitter.svg" alt="twitter">
+                </a>
             </div>
 
              <div class="circle">
@@ -204,6 +272,10 @@
             
     </footer>
 </section>
+
+
+
+
 
 
     </main>

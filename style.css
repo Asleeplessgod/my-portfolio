@@ -1,5 +1,8 @@
 
+html{
 
+     scroll-behavior: smooth;
+}
 
 
 *{
@@ -57,8 +60,7 @@ header nav {
     display: flex;
     align-items: stretch;
     height: 50px;
-
-    
+    flex-wrap: nowrap;
 }
    
 
@@ -78,7 +80,7 @@ section img {
 
 .hero {
     position: relative;
-    background-image: url(Asset/image/emmmmamamm.PNG);
+    background-image: url(Asset/image/emma.PNG);
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -155,7 +157,6 @@ button:hover{
 
 
       .features{
-        margin-top: 60px;
         border: 1px solid #f9f9f9 ;
         background-color: #f9f9f9 ;
 
@@ -214,14 +215,20 @@ button:hover{
     background-color:  #333333;
     transform: rotateZ(360deg);
     transition-property: all;
-    transition-duration: 2.5s ;
+    transition-duration: 1.5s ;
     transition-delay: o.3s;
     transition-timing-function: ease-in-out ;
 }
 
 
+.features{
+    padding: 16px;
+}
+
+
 
 .about-section{
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0);
     margin-top: 60px;
     
@@ -246,11 +253,14 @@ button:hover{
     font-size: 13px;
     font-weight: 400;
     font-stretch: 100%;
+    display: flex;
+    justify-content: center;
+    
 
 
 }
 
-.left h3 {
+.left h3 , h4{
     margin-bottom: 15PX;
    color: #333333;
     font-family: "Open Sans", sans-serif;
@@ -258,16 +268,10 @@ button:hover{
     font-weight: 500;
     font-stretch: 100%;
 
+
 }
 
-.left h4 {
-    margin-bottom: 15px;
-    color: #333333;
-    font-family: "Open Sans", sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    font-stretch: 100%;
-}
+
 
 
  p {
@@ -298,8 +302,9 @@ button:hover{
 
 .About-container{
     display: flex;
-    padding: 40px ;
+    padding: 40px;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 
@@ -338,13 +343,20 @@ footer{
     font-family: "Open Sans", sans-serif;
     background-color: #202020;
     padding: 60px;
+    font-size: 13px;
+    font-weight: 400;
+    
     
 }
 
 footer p {
     margin-top: 20px;
-    text-align: center;
-    color: #f9f9f9;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    font-stretch: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -354,7 +366,8 @@ footer p {
     gap: 15px;
 }
 .circle img {
-    color: #f9f9f9;
+    background-color: #f9f9f9;
+    border: none;
     width: 20px;
     height: 20px;
 }
@@ -373,6 +386,978 @@ footer p {
 
 .circle:hover{
     background-color: #ffa400;
+    border: none;
 }
+
+.team-section {
+    padding: 30px;
+    background-color: 
+    RGB(249, 249, 249)  ;
+}
+
+
+.team img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+
+}
+
+.team img:hover {
+    border-radius: 50%;
+}
+
+
+
+.team {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card{
+    justify-content: center;
+}
+
+.team h2{
+
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 400;
+    font-stretch: 100%;
+    margin-top: 12px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+
+}
+
+.team h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border: none;
+    color: #ffa400;
+    padding: 18px;
+    margin-top: 12px;
+
+}
+
+.team p {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.Contact-section{
+    background-color: #303030;
+    color: #EEEEEE;
+    padding: 60px 20px;
+    
+    
+}
+
+.contact{
+    text-align: center;
+    
+    
+}
+
+.contact h2 {
+     margin-top: 40px;
+}
+    
+
+.contact p{ 
+    font-family: "Open Sans", sans-serif;
+    justify-content: center;
+     align-items: center;
+    color: #EEEEEE;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 15px;
+
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.contact-info h3, p{
+    display: flex;
+    padding: 20px;
+    margin-bottom: 10px;
+    gap: 11px;
+ } 
+
+  .left-form {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 1px;
+    width: 25%;
+
+
+  }
+
+
+
+.right-form{
+    display: flex;
+    padding: 20px;
+    width: 60%;
+    justify-content: center;
+
+}
+    
+
+
+
+.left-form h3 {
+    font-family: "Open Sans", sans-serif;
+    color: #EEEEEE;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+
+.left-form p {
+ font-family: "Open Sans", sans-serif;
+    color: #EEEEEE;
+    font-size: 13px;
+    font-weight: 400;
+
+    
+}
+
+ .subject input {
+    background-color: #303030;
+     color: #EEEEEE;
+     border: 1px solid grey;
+    padding: 30px;
+     margin-bottom: 10px;
+    width: 100%;
+    height: 45px;
+}
+
+
+.valid-id {
+    display:flex ;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.valid-id input{
+    background-color: #303030;
+    border: 1px solid grey;
+    color: #EEEEEE;
+    padding: 30px;
+    flex: 1;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.textarea textarea {
+    background-color: #303030;
+    color: #EEEEEE;
+    padding: 50px;
+     margin-bottom: 10px;   
+
+}
+
+
+.left-form img {
+     background-color: #ffa400;
+    border: none ;
+    width: 20px;
+    height: 20px;
+
+}
+
+.left-form a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffa400;
+}
+
+
+.left-form a:hover{
+    color: #dab97c;
+
+}
+#form-button input{
+    background-color: #303030;
+    color: #EEEEEE;
+    border: 1px solid grey;
+    padding: 12px 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;  
+    width: 200px;  
+
+}
+
+
+#form-button input{
+    background-color: #303030;
+    color: #EEEEEE;
+    border: 1px solid grey;
+    padding: 12px 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;  
+    width: 200px;  
+}
+
+/* ===== MOBILE FIRST - 4 BREAKPOINTS ===== */
+
+/* BASE: Extra Small (< 414px) - Smallest phones */
+header {
+    flex-wrap: wrap;
+    padding: 8px;
+    gap: 10px;
+}
+
+header h3 {
+    font-size: 16px;
+}
+
+header img {
+    width: 35px;
+    height: 35px;
+}
+
+header nav {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+header a {
+    padding: 6px 8px;
+    font-size: 9px;
+    flex: 0 1 48%;
+    text-align: center;
+}
+
+main {
+    margin-top: 70px;
+}
+
+.hero {
+    height: 45vh;
+}
+
+.hero-text {
+    padding-top: 40px;
+    font-size: 14px;
+}
+
+.hero-text h1 {
+    font-size: 18px;
+}
+
+.hero-text h2 {
+    font-size: 12px;
+}
+
+button {
+    padding: 6px 16px;
+    font-size: 10px;
+}
+
+.features h2 {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.container {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+}
+
+.item {
+    flex: 1 1 100%;
+    margin: 3px 0;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+    margin: 8px;
+}
+
+.about-section {
+    padding: 8px;
+    margin-top: 25px;
+}
+
+.about-hero h2 {
+    font-size: 18px;
+}
+
+.about-hero p {
+    font-size: 10px;
+}
+
+.About-container {
+    flex-direction: column;
+    padding: 8px;
+    gap: 12px;
+}
+
+.left h3, h4 {
+    font-size: 16px;
+}
+
+.team-section {
+    padding: 12px;
+}
+
+.team h2 {
+    font-size: 18px;
+}
+
+.team h3 {
+    font-size: 16px;
+}
+
+.team img {
+    max-width: 180px;
+    height: 180px;
+}
+
+.Contact-section {
+    padding: 15px 8px;
+}
+
+.contact h2 {
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.contact p {
+    font-size: 10px;
+}
+
+.contact-info {
+    flex-direction: column;
+    padding: 8px;
+    gap: 12px;
+}
+
+.left-form {
+    width: 100%;
+    text-align: left;
+}
+
+.left-form h3 {
+    font-size: 16px;
+}
+
+.right-form {
+    width: 100%;
+    padding: 8px;
+}
+
+.valid-id {
+    flex-direction: column;
+    gap: 0;
+}
+
+.valid-id input {
+    width: 100%;
+    padding: 10px;
+    height: 38px;
+    margin-bottom: 6px;
+}
+
+.subject input {
+    width: 100%;
+    padding: 10px;
+    height: 38px;
+    margin-bottom: 6px;
+}
+
+.textarea textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 6px;
+}
+
+#form-button input {
+    width: 100%;
+    padding: 8px;
+}
+
+footer {
+    padding: 15px 8px;
+}
+
+.circle {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* ===== SMALL PHONES (sm >= 414px) ===== */
+@media (min-width: 414px) {
+    
+    header {
+        padding: 8px;
+    }
+    
+    header h3 {
+        font-size: 18px;
+    }
+    
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    header a {
+        padding: 8px 10px;
+        font-size: 10px;
+        flex: 0 1 45%;
+    }
+    
+    main {
+        margin-top: 75px;
+    }
+    
+    .hero {
+        height: 50vh;
+    }
+    
+    .hero-text {
+        padding-top: 50px;
+        font-size: 16px;
+    }
+    
+    .hero-text h1 {
+        font-size: 20px;
+    }
+    
+    .hero-text h2 {
+        font-size: 14px;
+    }
+    
+    button {
+        padding: 8px 20px;
+        font-size: 11px;
+    }
+    
+    .features h2 {
+        font-size: 18px;
+    }
+    
+    .container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .item {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+    
+    .icon {
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+        margin: 10px;
+    }
+    
+    .about-section {
+        padding: 10px;
+        margin-top: 30px;
+    }
+    
+    .about-hero h2 {
+        font-size: 20px;
+    }
+    
+    .about-hero p {
+        font-size: 11px;
+    }
+    
+    .About-container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    .left h3, h4 {
+        font-size: 18px;
+    }
+    
+    .team-section {
+        padding: 15px;
+    }
+    
+    .team h2 {
+        font-size: 20px;
+    }
+    
+    .team h3 {
+        font-size: 18px;
+    }
+    
+    .team img {
+        max-width: 200px;
+        height: 200px;
+    }
+    
+    .Contact-section {
+        padding: 20px 10px;
+    }
+    
+    .contact h2 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    
+    .contact p {
+        font-size: 11px;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    .left-form {
+        width: 100%;
+    }
+    
+    .left-form h3 {
+        font-size: 18px;
+    }
+    
+    .right-form {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .valid-id {
+        flex-direction: column;
+    }
+    
+    .valid-id input {
+        width: 100%;
+        padding: 12px;
+        height: 40px;
+        margin-bottom: 8px;
+    }
+    
+    .subject input {
+        width: 100%;
+        padding: 12px;
+        height: 40px;
+        margin-bottom: 8px;
+    }
+    
+    .textarea textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 8px;
+    }
+    
+    #form-button input {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    footer {
+        padding: 20px 10px;
+    }
+    
+    .circle {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+/* ===== TABLETS (md >= 768px) ===== */
+@media (min-width: 768px) {
+    
+    header {
+        flex-wrap: nowrap;
+        padding: 7px;
+        gap: 0;
+    }
+    
+    header h3 {
+        font-size: 24px;
+    }
+    
+    header img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    header nav {
+        width: auto;
+        flex-wrap: nowrap;
+    }
+    
+    header a {
+        padding: 12px 15px;
+        font-size: 12px;
+        flex: none;
+    }
+    
+    main {
+        margin-top: 70px;
+    }
+    
+    .hero {
+        height: 60vh;
+    }
+    
+    .hero-text {
+        padding-top: 80px;
+        font-size: 20px;
+    }
+    
+    .hero-text h1 {
+        font-size: 28px;
+    }
+    
+    .hero-text h2 {
+        font-size: 18px;
+    }
+    
+    button {
+        padding: 10px 24px;
+        font-size: 12px;
+    }
+    
+    .features h2 {
+        font-size: 24px;
+    }
+    
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .item {
+        flex: 0 1 calc(50% - 8px);
+        margin: 10px;
+    }
+    
+    .icon {
+        width: 100px;
+        height: 100px;
+        font-size: 35px;
+        margin: 15px;
+    }
+    
+    .about-section {
+        padding: 20px;
+        margin-top: 40px;
+    }
+    
+    .about-hero h2 {
+        font-size: 26px;
+    }
+    
+    .about-hero p {
+        font-size: 12px;
+    }
+    
+    .About-container {
+        flex-direction: row;
+        padding: 20px;
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+    
+    .left {
+        flex: 1;
+    }
+    
+    .right {
+        flex: 1;
+    }
+    
+    .left h3, h4 {
+        font-size: 20px;
+    }
+    
+    .team-section {
+        padding: 30px;
+    }
+    
+    .team h2 {
+        font-size: 26px;
+    }
+    
+    .team h3 {
+        font-size: 20px;
+    }
+    
+    .team img {
+        max-width: 250px;
+        height: 250px;
+    }
+    
+    .Contact-section {
+        padding: 40px 20px;
+    }
+    
+    .contact h2 {
+        font-size: 26px;
+    }
+    
+    .contact p {
+        font-size: 12px;
+    }
+    
+    .contact-info {
+        flex-direction: row;
+        padding: 20px;
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+    
+    .left-form {
+        width: 40%;
+    }
+    
+    .left-form h3 {
+        font-size: 20px;
+    }
+    
+    .right-form {
+        width: 55%;
+        padding: 20px;
+    }
+    
+    .valid-id {
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .valid-id input {
+        flex: 1;
+        width: auto;
+    }
+    
+    .subject input {
+        width: 100%;
+        padding: 12px;
+        height: auto;
+    }
+    
+    .textarea textarea {
+        width: 100%;
+        padding: 12px;
+    }
+    
+    #form-button input {
+        width: auto;
+        padding: 12px 30px;
+    }
+    
+    footer {
+        padding: 40px 20px;
+    }
+    
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* ===== DESKTOPS (lg >= 992px) ===== */
+@media (min-width: 992px) {
+    
+    header {
+        padding: 7px;
+    }
+    
+    header a {
+        padding: 20px;
+        font-size: 14px;
+    }
+    
+    main {
+        margin-top: 60px;
+    }
+    
+    .hero {
+        height: 100vh;
+    }
+    
+    .hero-text {
+        padding-top: 350px;
+        font-size: 36px;
+    }
+    
+    .hero-text h1 {
+        font-size: 36px;
+    }
+    
+    .hero-text h2 {
+        font-size: 30px;
+    }
+    
+    button {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+    
+    .features h2 {
+        font-size: 30px;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .item {
+        flex: 0 1 calc(33.333% - 14px);
+        margin: 20px;
+    }
+    
+    .icon {
+        width: 120px;
+        height: 120px;
+        font-size: 40px;
+        margin: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .about-section {
+        padding: 30px;
+    }
+    
+    .about-hero h2 {
+        font-size: 30px;
+    }
+    
+    .about-hero p {
+        font-size: 13px;
+    }
+    
+    .About-container {
+        padding: 40px;
+        gap: 40px;
+    }
+    
+    .left h3, h4 {
+        font-size: 24px;
+    }
+    
+    .team-section {
+        padding: 30px;
+    }
+    
+    .team h2 {
+        font-size: 30px;
+    }
+    
+    .team h3 {
+        font-size: 24px;
+    }
+    
+    .team img {
+        max-width: 300px;
+        height: 300px;
+    }
+    
+    .Contact-section {
+        padding: 60px 20px;
+    }
+    
+    .contact h2 {
+        font-size: 30px;
+    }
+    
+    .contact p {
+        font-size: 13px;
+    }
+    
+    .contact-info {
+        padding: 20px;
+        gap: 30px;
+    }
+    
+    .left-form {
+        width: 25%;
+    }
+    
+    .left-form h3 {
+        font-size: 24px;
+    }
+    
+    .right-form {
+        width: 60%;
+        padding: 20px;
+    }
+    
+    #form-button input {
+        width: 200px;
+        padding: 12px 30px;
+    }
+    
+    footer {
+        padding: 60px;
+    }
+    
+    .circle {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
