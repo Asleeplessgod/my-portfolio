@@ -14,8 +14,9 @@ html{
 body{
     background-color:white ;
 }
+       /*header*/
 
-header{
+  header{
     font-family:"Open Sans", sans-serif ;
     background-color: #ffffff;
     color: #333333;
@@ -71,12 +72,15 @@ header nav a:hover ,header nav a:focus{
 
 }
 
+
+       /* hero section  */
+
 section img {
     width: 100%;
     height: 100vh;
 
 }
-
+ 
 
 .hero {
     position: relative;
@@ -154,7 +158,7 @@ button:hover{
 }
 
 
-
+        /* features section */
 
       .features{
         border: 1px solid #f9f9f9 ;
@@ -226,7 +230,7 @@ button:hover{
 }
 
 
-
+      /* ABOUT SECTION */
 .about-section{
     padding: 15px;
     background-color: rgba(0, 0, 0, 0);
@@ -268,10 +272,7 @@ button:hover{
     font-weight: 500;
     font-stretch: 100%;
 
-
 }
-
-
 
 
  p {
@@ -293,11 +294,6 @@ button:hover{
     font-stretch: 100%;
 
 }
-
-
-
-
-
 
 
 .About-container{
@@ -338,7 +334,7 @@ button:hover{
     background-color: #ffa400;
     height: 6px;
 }
-
+     /* footer section */
 footer{
     font-family: "Open Sans", sans-serif;
     background-color: #202020;
@@ -388,7 +384,9 @@ footer p {
     background-color: #ffa400;
     border: none;
 }
+         
 
+          /* Team section */
 .team-section {
     padding: 30px;
     background-color: 
@@ -405,6 +403,7 @@ footer p {
 
 .team img:hover {
     border-radius: 50%;
+    transform: translateY(-8);
 }
 
 
@@ -456,7 +455,7 @@ footer p {
     text-transform: uppercase;
 }
 
-
+         /* CONTACT SECTION */
 .Contact-section{
     background-color: #303030;
     color: #EEEEEE;
@@ -623,9 +622,9 @@ footer p {
     width: 200px;  
 }
 
-/* ===== MOBILE FIRST - 4 BREAKPOINTS ===== */
+     /* 4 BREAKPOINTS*/
 
-/* BASE: Extra Small (< 414px) - Smallest phones */
+  /*  (< 414px) */
 header {
     flex-wrap: wrap;
     padding: 8px;
